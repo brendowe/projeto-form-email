@@ -1,29 +1,34 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
     --corRed: hsl(0, 100%, 74%);
     --corGreen: hsl(154, 59%, 51%);
     --corBlue: hsl(248, 32%, 49%);
     --corDarkBlue: hsl(249, 10%, 26%);
     --corGrayBlue: hsl(246, 25%, 77%);
-
+    --fonte: 'Poppins', sans-serif;
 }
 body {
     background-image: url(images/bg-intro-mobile.png);
     background-repeat: no-repeat;
     background-color: rgba(255, 0, 0, 0.5);
+    font-family: var(--fonte);
+    margin-top: 50px;
 }
 
 h1, p {
     color: white;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 p {
-    font-size: 18px;
+    font-size: 14px;
     width: 300px;
     margin: auto;
+    font-weight: 400;
 }
 
 #teste {
@@ -34,6 +39,7 @@ p {
     height: 80px;
     border-radius: 8px;
     background-color: var(--corBlue);
+    font-weight: 600;
 }
 
 form {
@@ -49,22 +55,40 @@ form {
 .inputs {
     margin: auto;
     margin-top: 10px;
-    height: 45px;
+    height: 50px;
     border-radius: 8px;
     width: 80%;
     display: flex;
+    border-color: var(--corGrayBlue);
+    border-width: 0.1px;
 }
 
 button {
     width: 83%;
-    height: 45px;
+    height: 50px;
     background-color: var(--corGreen);
     margin: auto;
     border-radius: 8px;
     margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    border-color: var(--corGrayBlue);
+    border-width: 0.1px;
+}
+
+input::placeholder {
+    font-family: var(--fonte);
+    font-weight: 800;
 }
 
 form > p {
     color: black;
-    
+    font-size: 12px;    
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#termos {
+    color: red;
+    font-weight: 600;
 }
