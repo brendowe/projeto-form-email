@@ -124,6 +124,7 @@ form > p {
 
     form {
         height: 600px;
+        box-shadow: -6px 10px 2px 0px rgba(0,0,0,0.1);
     }
 
     .inputs {
@@ -140,4 +141,9 @@ form > p {
         font-size: 12px;
         width: 400px;
     }
+
+    #teste {
+        box-shadow: -6px 10px 2px 0px rgba(0,0,0,0.1);
+}
+
 }
